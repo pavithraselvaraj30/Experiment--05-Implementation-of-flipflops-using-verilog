@@ -117,6 +117,7 @@ Program for flipflops  and verify its truth table in quartus using Verilog progr
 Developed by: Pavithra
 RegisterNumber: 212223230147
 ## SR Flip Flop
+```
 module SR_flipflop(S,R,clk,Q,Qbar);
 input S,R,clk;
 output Q,Qbar;
@@ -126,7 +127,9 @@ nand (Y,R,clk);
 nand (Q,X,Qbar);
 nand (Qbar,Y,Q);
 endmodule D Flip-Flop: module D_flipflop(D,clk,Q,Qbar);
+```
 ## D Flip Flop
+```
 input D,clk;
 output Q,Qbar;
 assign Dbar=~D;
@@ -135,8 +138,10 @@ nand (X,D,clk);
 nand (Y,Dbar,clk);
 nand (Q,X,Qbar);
 nand (Qbar,Y,Q);
-endmodule 
+endmodule
+```
 ## JK Flip Flop:
+```
 module JK_flipflop(J,K,clk,Q,Qbar);
 input J,K,clk;
 output Q,Qbar;
@@ -146,7 +151,9 @@ nand (Y,K,clk,Q);
 nand (Q,X,Qbar);
 nand (Qbar,Y,Q);
 endmodule
+```
 ## T Flip Flop
+```
 module T_flipflopo(T,clk,Q,Qbar);
 input T,clk;
 output Q,Qbar;
@@ -156,25 +163,25 @@ nand (R,T,clk,Q);
 nand (Q,S,Qbar);
 nand (Qbar,R,Q);
 endmodule
-*/
 ```
+
 ### RTL LOGIC FOR FLIPFLOPS 
-## SR Flip Flop
+ SR Flip Flop
 ![image](https://github.com/pavithraselvaraj30/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149366880/43cecf66-3543-438e-add1-92c073863902)
-## D Flip Flop
+ D Flip Flop
 ![image](https://github.com/pavithraselvaraj30/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149366880/5de49942-95b7-44db-abca-cbbb8686a690)
-## JK Flip Flop
+ JK Flip Flop
 ![image](https://github.com/pavithraselvaraj30/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149366880/fbfd4564-2383-45f0-9b60-ff297e939077)
-## T Flip Flop
+ T Flip Flop
 ![image](https://github.com/pavithraselvaraj30/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149366880/18a41b2f-316d-4c07-982c-1efc1bb285d1)
 ### TIMING DIGRAMS FOR FLIP FLOPS 
-## SR Flip Flop
-## D Flip Flop
+SR Flip Flop
+D Flip Flop
 ![image](https://github.com/pavithraselvaraj30/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149366880/673b01be-798c-4b7c-a394-03b4a150add0)
-## JK Flip Flop
+JK Flip Flop
 ![image](https://github.com/pavithraselvaraj30/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149366880/575ce001-59a9-42c0-8e91-6807cfc96eea)
 
-## T Flip Flop
+T Flip Flop
 ![image](https://github.com/pavithraselvaraj30/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149366880/63b51924-f3be-4168-b071-c0ed3d811644)
 
 ### RESULTS
