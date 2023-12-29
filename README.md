@@ -164,7 +164,7 @@ nand (Q,S,Qbar);
 nand (Qbar,R,Q);
 endmodule
 ```
-
+/*
 ### RTL LOGIC FOR FLIPFLOPS 
  SR Flip Flop
 ![image](https://github.com/pavithraselvaraj30/Experiment--05-Implementation-of-flipflops-using-verilog/assets/149366880/43cecf66-3543-438e-add1-92c073863902)
